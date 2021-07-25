@@ -1,0 +1,7 @@
+# Folders
+coverage/
+node_modules/
+dist/
+.idea/
+
+#  Files
