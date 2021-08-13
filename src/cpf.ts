@@ -72,7 +72,7 @@ function validate(data: string): boolean {
     return firstDigit === divisionRest && secondDigit === divisionRest2;
 }
 
-export function isValid(data: string | number): boolean {
+export function check(data: string | number): boolean {
     const cleanedData = prepareData(data);
     return checkDigits(cleanedData) && checkBlockList(cleanedData) && validate(cleanedData);
 }

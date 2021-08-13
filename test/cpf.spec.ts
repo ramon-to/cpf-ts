@@ -1,6 +1,6 @@
-import { isValid } from '../src';
+import { check } from '../src';
 
-describe('isValid', () => {
+describe('check', () => {
     it.each([
         ['', false],
         ['00000000000', false],
@@ -20,7 +20,7 @@ describe('isValid', () => {
         [579124088, true],
         ['00579124088', true],
         ['005.791.240-88', true],
-    ])('isValid("%s") should return %p', (input, expected) => {
-        expect(isValid(input)).toBe(expected);
+    ])('check("%s") should return %p', (input, expected) => {
+        expect(check(input)).toBe(expected);
     });
 });
