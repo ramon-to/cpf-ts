@@ -1,6 +1,6 @@
 {
   "name": "@allmeida/cpf-ts",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Validação de CPF em TypeScript",
   "keywords": ["cpf"],
   "main": "dist/index.js",
@@ -15,10 +15,11 @@
   "homepage": "https://github.com/ramon-to/cpf-ts#readme",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage --bail",
     "build": "npm run clean && tsc --declaration",
     "clean": "rm -rf dist/",
     "lint": "eslint --ext .ts,.tsx src test",
-    "ci": "npm run lint && npm run test && npm run build"
+    "ci": "npm run lint && npm run test:coverage && npm run build"
   },
   "author": "",
   "public": true,

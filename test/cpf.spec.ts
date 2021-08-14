@@ -20,6 +20,7 @@ describe('check', () => {
         [579124088, true],
         ['00579124088', true],
         ['005.791.240-88', true],
+        ['170.610.550-90', true],
     ])('check("%s") should return %p', (input, expected) => {
         expect(check(input)).toBe(expected);
     });
